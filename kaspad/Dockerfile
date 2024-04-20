@@ -15,8 +15,8 @@ RUN cp ./bin/* /usr/bin/
 COPY scripts/*.bash /scripts/
 
 RUN useradd -r kaspa
-#RUN mkdir -p /home/kaspa/.rusty-kaspa
-#RUN chown kaspa:kaspa /home/kaspa/.rusty-kaspa
+RUN mkdir -p /home/kaspa/.rusty-kaspa
+RUN chown kaspa:kaspa /home/kaspa/.rusty-kaspa
 
 USER kaspa
 
